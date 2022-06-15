@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  padding: 15px;
+  background: none;
+  border: 1px solid #26a69a;
+  border-radius: 4px;
+  cursor: pointer;
+  &:disabled {
+    background-color: #aaa;
+    border-color: #aaa;
+    cursor: not-allowed;
+  }
+}
+
+input {
+  padding: 15px;
+  border: 1px solid #26a69a;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  min-width: 280px;
+  background: transparent;
+  &:focus-visible {
+    border-color: #11dece;
+  }
+}
