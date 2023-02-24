@@ -17,6 +17,7 @@ function App() {
   const [currentTask, setCurrentTask] = useState({});
 
   const addTask = (userTask) => {
+    console.log('userTask', userTask);
     const newTask = {
       id: Math.random().toString(36).substr(2, 9),
       name: userTask,
